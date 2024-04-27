@@ -1,6 +1,7 @@
 {
     "name": "intro-react-app",
     "version": "1.0.0",
+    "homepage": "https://Ankit-kumar13.github.io/google-book-search",
     "description": "",
     "main": "index.js",
     "scripts": {
@@ -9,7 +10,9 @@
         "preview": "vite preview",
         "format": "prettier --write \"src/*/.{js, jsx}\"",
         "lint": "eslint \"src/*/.{js, jsx}\" --quiet",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
     },
     "keywords": [],
     "author": "",
